@@ -69,7 +69,7 @@ int *constructST(int arr[], int n ) {
 	
 	int h = (int)(ceil(log2(n))); // height of tree 
 	int st_size = 2*(int)pow(2, h) - 1; 
-	int *st = new int[st_size]; 
+	int *st = new int[st_size];
 	constructUtil(st, 0, arr, 0, n-1);
 	return st;
 }
